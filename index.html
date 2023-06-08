@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sten, Sax, Påse</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <form onsubmit="event.preventDefault(); submitForm();">
+    <label for="nameInput">Ange ditt namn: </label>
+<input type="text" id="nameInput">
+<button onclick="startGame()">Starta spelet</button>
+</form>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">You</div>
+        <div id="computer-label" class="badge">Comp</div>
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+    <p id="player-choice">Spelarens val: </p>
+<img id="player-choice-img" src="" alt="Spelarens valbild">
+
+<p id="computer-choice">Datorns val: </p>
+<img id="computer-choice-img" src="" alt="Datorns valbild">
+    
+    <div class="result">
+        <p> Må bästa spelaren Vinna!</p>
+    </div>
+    <div class="choices">
+        <div id="rock" class="choice">
+            <img width="48" height="48" src="jpeg/Rock.svg" />
+        </div>
+        <div id="paper" class="choice">
+            <img width="48" height="48" src="jpeg/Paper.svg" />
+        </div>
+        <div id="scissors" class="choice">
+            <img width="48" height="48" src="jpeg/Scissors.svg" />
+        </div>
+        <p id="action-message">Make your move.</p>
+    </div>
+    <button id="restart-button">Starta om spelet</button>
+    <script src="./js/script.js"></script> 
+
+
+
+    
+</body>
+</html>
